@@ -55,7 +55,6 @@ li{
   padding-right: 16px;
 }
 .col{
-  background-color: white;
   height: 320px;
   padding: 0;
   margin-left: 16px;
@@ -95,4 +94,32 @@ li{
 
 .navbar-toggle.collapsed span:nth-child(3) {
     opacity: 1;
+}
+.card{
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  position: relative;
+  cursor: pointer;
+}
+.card div{
+  width: 100%;
+  line-height: 300px;
+  color: gray;
+  text-align: center;
+  font-weight: bold;
+  font-size: 140px;
+    position: absolute;
+  backface-visibility: hidden;
+}
+.card:hover{
+  transform: rotateY(180deg);
+}
+.front{
+  background-color: white;
+}
+.back{
+  background-color: black;
+  transform: rotateY(180deg);
 }
